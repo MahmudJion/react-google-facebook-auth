@@ -28,9 +28,9 @@ function App () {
                     {!login &&
                         <FacebookLogin
                             appId="<YOUR APP ID>"
-                            autoLoad={true}
+                            autoLoad={false}
                             fields="name,email,picture"
-                            scope="public_profile,user_friends"
+                            scope="public_profile,email"
                             callback={responseFacebook}
                             icon="fa-facebook" />
                     }
