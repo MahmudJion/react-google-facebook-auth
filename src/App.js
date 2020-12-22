@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import GoogleBtn from './GoogleBtn';
+import GoogleBtn from './components/GoogleBtn';
 import FacebookLogin from 'react-facebook-login';
 import { Card, Image } from 'react-bootstrap';
 
@@ -23,7 +23,7 @@ function App () {
     return (
         <div class="container">
             <GoogleBtn/>
-            <Card style={{ width: '600px' }}>
+            <Card style={{ width: '400px' }}>
                 <Card.Header>
                     {!login &&
                         <FacebookLogin
